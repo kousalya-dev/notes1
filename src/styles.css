@@ -56,7 +56,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
 /* nav */
 .nav { position: fixed; inset: 0 0 auto 0; z-index: 100; }
 .nav-inner { width: min(1180px, 100% - 24px); margin: 12px auto 0; display: flex; justify-content: space-between; align-items: center; padding: 8px 10px 8px 20px; border-radius: 999px; background: rgba(10, 10, 10, 0.65); backdrop-filter: blur(16px); border: 1px solid var(--line); }
-.logo { font-family: var(--display); font-weight: 800; font-size: 1.3rem; }
+.logo { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; font-size: 0.95rem; letter-spacing: -0.01em; }
+.logo-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--lime); color: #0a0a0a; font-weight: 800; font-size: 1.05rem; }
 .logo i { color: var(--lime); font-style: normal; }
 .nav nav { display: flex; align-items: center; gap: 2px; }
 .nav nav a { padding: 8px 15px; border-radius: 999px; font-size: 0.9rem; color: var(--mute); transition: 0.2s; }

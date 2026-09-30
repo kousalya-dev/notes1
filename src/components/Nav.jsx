@@ -26,7 +26,7 @@ export default function Nav() {
   return (
     <header className="nav">
       <div className="nav-inner">
-        <a href="#top" className="logo">H<i>.</i></a>
+        <a href="#top" className="logo" aria-label="Hanu S Kumar — home"><span className="logo-mark">H</span><span className="logo-text">Hanu S Kumar<i>.</i></span></a>
         <nav className={open ? 'open' : ''}>
           {links.map(([id, l]) => (
             <a key={id} href={`#${id}`} className={active === id ? 'on' : ''} onClick={() => setOpen(false)}>{l}</a>
